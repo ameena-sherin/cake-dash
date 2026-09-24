@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Cake Dash"
+description = "A cheerful endless runner where a tiny cake leaps across a kitchen counter, dodges baking obstacles, and collects sprinkles. Play with keyboard or touch controls, track your score, and jump back in after a crash."
+version = "1.0.0"
+id = "artifacts/cake-dash"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22446
+
+[services.development]
+run = "pnpm --filter @workspace/cake-dash run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/cake-dash", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/cake-dash/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22446"
+BASE_PATH = "/"
