@@ -32,4 +32,4 @@ avoid kitchen obstacles, and try to achieve the highest score.
 
 **Ameena Sherin**
 
-[GitHub] (https://github.com/ameena-sherin)
+[GitHub](https://github.com/ameena-sherin)
