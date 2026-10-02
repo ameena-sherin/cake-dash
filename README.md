@@ -26,7 +26,7 @@ avoid kitchen obstacles, and try to achieve the highest score.
 
 ## 🚀 Play the Game
 
-[Play Cake-Dash](https://ameena-sherin.github.io/cake-dash/)
+[Play Cake-Dash](https://cake-dash--ameenasheriname.replit.app/)
 
 ## 👩‍💻 Developer
 
